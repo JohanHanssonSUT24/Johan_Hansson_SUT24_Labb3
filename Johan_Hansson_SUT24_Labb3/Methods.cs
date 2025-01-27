@@ -74,7 +74,7 @@ namespace Johan_Hansson_SUT24_Labb3.Models
         public static void AddMember(SchoolDbContext context)
         {
 
-            Console.WriteLine("ADD NEW STAFF MEMBER");
+            Console.WriteLine("--ADD NEW STAFF MEMBER--");
             Console.WriteLine("Type in full name");
             string userInput = Console.ReadLine();
             Console.WriteLine("Enter occupation");
