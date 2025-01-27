@@ -19,13 +19,13 @@
                 switch (userInput)
                 {
                     case "1":
-                        ShowStudents();
+                        Methods.ShowStudents(context);
                         break;
                     case "2":
-                        StudentsInClass();
+                        Methods.StudentsInClass(context);
                         break;
                     case "3":
-                        AddMember();
+                        Methods.AddMember(context);
                         break;
                     case "4":
                         menuBool = false;
