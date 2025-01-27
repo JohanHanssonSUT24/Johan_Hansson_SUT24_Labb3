@@ -9,10 +9,12 @@
 
             while (menuBool)
             {
+                Console.WriteLine("--SCHOOL ADMIN MENU--");
                 Console.WriteLine("[1] Show all students");
                 Console.WriteLine("[2] Show students according to class");
                 Console.WriteLine("[3] Add staff member");
-                Console.WriteLine("[4] Exit program");
+                Console.WriteLine("[4] Show all staff members");
+                Console.WriteLine("[5] Exit program");
                 Console.WriteLine("Choose an option");
                 string userInput = Console.ReadLine();
 
@@ -28,10 +30,13 @@
                         Methods.AddMember(context);
                         break;
                     case "4":
+                        Methods.ShowStaff(context);
+                        break;
+                    case "5":
                         menuBool = false;
                         break;
                     default:
-                        Console.WriteLine("Choose between 1-4");
+                        Console.WriteLine("Choose between 1-5");
                         break;
 
 
