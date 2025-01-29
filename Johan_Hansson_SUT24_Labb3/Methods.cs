@@ -84,6 +84,7 @@ namespace Johan_Hansson_SUT24_Labb3.Models
                 StaffName = $"{userInput}",
                 Occupation = staffOccupation
             };
+            
             context.Staff.Add(newMember);
             context.SaveChanges();
         }
